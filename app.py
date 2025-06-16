@@ -24,7 +24,7 @@ model_path = Path.cwd()/'model'
 learn = vision_learner(dls, resnet18, metrics=error_rate, path=model_path)
 
 
-learn.load('model_weights.pth', with_path=True)
+learn.load('model_weights')
 
 
 

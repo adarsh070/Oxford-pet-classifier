@@ -18,7 +18,7 @@ dls = ImageDataLoaders.from_lists(
 
 learn = vision_learner(dls, resnet34, metrics=error_rate)
 
-learn.load('model_weights')
+learn.load('model_weights.pth', with_path=True)
 
 
 def predict(img):

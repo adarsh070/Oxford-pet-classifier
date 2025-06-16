@@ -16,8 +16,8 @@ labels = [human_labels[l] for l in raw_labels]
 
 dls = ImageDataLoaders.from_lists(
     path=".", 
-    fnames=['cat_example.jpg'], 
-    labels=['cat'],             
+    fnames=['cat_example.jpg', 'dog.jpg'], 
+    labels=['cat', 'dog'],         
     valid_pct=0,
     bs=1
 )

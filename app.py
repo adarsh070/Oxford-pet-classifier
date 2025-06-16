@@ -1,23 +1,30 @@
-
+# app.py
 
 import gradio as gr
-from fastai import *
+from fastai.vision.all import *
 import skimage
+import pickle
 
-learn = learn.load('model_weights', cpu=True)
+with open('vocab.pkl', 'rb') as f:
+    labels = pickle.load(f)
 
-labels = learn.dls.vocab
+dls = ImageDataLoaders.from_lists(
+    path=".", 
+    fnames=['cat_example.jpg'], 
+    labels=['cat'],             
+    valid_pct=0,
+    bs=1
+)
+
+learn = vision_learner(dls, resnet34, metrics=error_rate)
+
+learn.load('model_weights')
+
 
 def predict(img):
-    """
-    Takes a PIL image, gets predictions from the fastai learner,
-    and returns a dictionary of labels and their probabilities.
-    """
+   
     pred, pred_idx, probs = learn.predict(img)
-    
     return {label: float(prob) for label, prob in zip(labels, probs)}
-
-
 
 title = "Pet Breed Classifier (Cat vs. Dog)"
 description = "A pet classifier trained on the Oxford Pets dataset with fastai. Upload an image of a cat or a dog to see the model's prediction."

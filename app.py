@@ -1,10 +1,10 @@
 
 
 import gradio as gr
-from fastai.vision.all import *
+from fastai import *
 import skimage
 
-learn = load_learner('model.pkl', cpu=True)
+learn = learn.load('model_weights', cpu=True)
 
 labels = learn.dls.vocab
 

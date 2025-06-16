@@ -1,0 +1,7 @@
+
+
+fastai
+gradio
+torch>=1.13.1
+torchvision>=0.14.1
+scikit-image>=0.19.3

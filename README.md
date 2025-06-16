@@ -11,13 +11,8 @@ A simple yet effective web application that classifies uploaded images as either
 
 ---
 
-![Screenshot of the Cat vs. Dog Gradio App](oxford-pet-classifier-demo.gif)
-<!-- 
-Take a good screenshot of your Gradio app interface (preferably with an example image uploaded and prediction shown) 
-and upload it to your GitHub repo (e.g., in an `assets` folder or directly) then replace YOUR_SCREENSHOT_LINK_HERE 
-with the relative path or direct link, e.g., assets/app_screenshot.png or the full URL if hosted elsewhere.
-A GIF would be even better!
--->
+[Screenshot of the Cat vs. Dog Gradio App](./assets/oxford-pet-classifier-demo.gif)
+
 
 ## 📝 Table of Contents
 

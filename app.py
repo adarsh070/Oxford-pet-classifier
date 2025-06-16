@@ -46,6 +46,6 @@ gr.Interface(
     title=title,
     description=description,
     article=article,
-    examples=['cat_example.jpg'], 
+    examples=['cat_example.jpg','dog_example.jpg'], 
     allow_flagging="never"
 ).launch()

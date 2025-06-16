@@ -1,7 +1,6 @@
 
-
-fastai
+fastai==2.8.2
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
 gradio
-torch>=1.13.1
-torchvision>=0.14.1
 scikit-image>=0.19.3

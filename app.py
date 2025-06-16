@@ -27,7 +27,7 @@ learn = vision_learner(dls, resnet18, metrics=error_rate)
 
 
 
-learn.load('model_weights.pth', with_path=True)
+learn.load('model_weights')
 
 
 

@@ -11,8 +11,7 @@ A simple yet effective web application that classifies uploaded images as either
 
 ---
 
-[Screenshot of the Cat vs. Dog Gradio App](./assets/oxford-pet-classifier-demo.gif)
-
+![Screenshot of the Cat vs. Dog Gradio App](./assets/oxford-pet-classifier-demo.gif)
 
 ## 📝 Table of Contents
 
